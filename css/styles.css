@@ -1,0 +1,274 @@
+/* Estilos para o body (PÁGINA PRINCIPAL) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-image: url(../imagens/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+/* Estilos para o logo da empresa */
+header img {
+  width: 150px;
+  height: 100px;
+  border: none;
+  filter: grayscale(50%) brightness(80%);
+  transition: filter 0.3s ease-in-out;
+}
+/* Estilos para a animação abaixo do logo */
+.colorful-box {
+  width: 100%;
+  height: 150px;
+  right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  animation: colorfulAnimation 4s infinite;
+  border: 3px solid rgb(0, 255, 123);
+  border-radius: 100px 50px;
+  background-color: transparent;
+  cursor: auto;
+}
+@keyframes colorfulAnimation {
+  0% { background-color: #a9a9a9; transform: translateX(0); }
+  50% { background-color: #4e4e4e; transform: translateX(10px); }
+  100% { background-color: rgb(0, 0, 0); transform: translateX(0); }
+}
+body div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body div ul li a {
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgba(0, 255, 128, 0.5);
+  margin-right: 15px;
+}
+body div ul li a:hover {
+  background-color: #f6ff0062; /* Nova cor de fundo ao passar o mouse */
+  color: #fff; /* Nova cor do texto ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 255, 34, 0.584); /* Nova sombra ao passar o mouse */
+}
+main {
+  padding: 20px;
+}
+article {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 80px 70px 80px 2px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px; /*Separador do letrário desenvolvedor front end (Espaçamento) */
+  color:#094732;
+  font-family: 'Courier New', Courier, monospace;
+  background-color:#c5fde2;
+  opacity: 0.7;
+  border-radius: 2px 75px 80px 2px;
+}
+h2 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  margin: 0;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+h3 {
+  font-size: 20px;
+  color: #00ff84b7;
+  background-color: #00ff8480;
+  border-radius: 100px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 1.5;
+  background: linear-gradient(to right red, blue, green, pink);
+  background-color: rgba(255, 255, 0, 0.699);
+  width: fit-content;
+  border-radius: 10px;
+  border: 2px solid rgba(21, 255, 0, 0.721);
+  box-shadow: 2px 2px 5px rgba(5, 5, 0.9);
+}
+.myButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  width: 4%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #1BFD9C;
+  color: #fff;
+  text-decoration:double;
+  border-radius: 100px;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 632px;
+  margin-top: 13px;
+}
+.myButton:hover {
+  background-color: #8e0000bd;
+}
+/* Estilos para o footer (ícones)*/
+footer ul li a img{
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  color: rgba(255, 0, 0, 0.769);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.482);
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(0, 7, 44);
+  margin-right: 10px;
+-webkit-box-shadow: inset 0 0 1em #2b00ffd2;
+  padding: 5px;
+  text-align: center;
+}
+.footer ul li a img:hover{
+  background-color: #1BFD9C;
+}
+/* Estilos para dispositivos menores (menu hamburguer ativo) */
+@media screen and (max-width: 767px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 1000;
+  }
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+button span{
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  left: -20%;
+  transition:.2s ease all;
+  border-bottom : solid rgb(255, 0, 0) ;
+  font-size:medium;
+  padding: 0px 20px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-radius: 50px;
+  border: 1px rgba(255, 0, 0, 0.745) solid;
+  margin-left: 570px;
+  margin-top: 10px;
+  margin-right: -550px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  box-shadow:  6px 8px 9px black;
+  text-align: center;
+  transition: height 0.5s ease-in-out;
+  animation:slideIn 1s linear forwards;
+  overflow: hidden;
+}
+.menu-button span {
+  display: none;
+}
+.menu-button.open span {
+  display: inline-block;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.menu-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../imagens/estrelado.jpeg);
+  background-repeat: no-repeat;
+  padding: 5px;
+  border-radius: 50px;
+  border-style: 100px double;
+  
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+.menu-list {
+    display: none;
+}
+/* Mostra a lista de menu quando o botão do menu está aberto */
+.menu-button.open + .menu-list {
+    display: flex;
+    flex-direction: initial;
+    background-color: rgba(0, 87, 88, 0.471);
+    position: absolute;
+    top: 10px;
+    right: 0vh;
+    left: 52px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.649);
+    border-radius: 100px;
+    z-index:999;
+    transition: all 0.5s ease;
+}
+/* Estilo para os itens da lista de menu */
+.menu-list li {
+    margin-bottom: 5px;
+}
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.menu-list li a:hover {
+    background-color: #f6ff0062;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 255, 34, 0.584);
+}

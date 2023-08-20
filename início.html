@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início da Página</title>
+    <link rel="icon" type="image/png" href="./imagens/maunis.JPG">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+        </button>
+        <ul class="menu-list" id="menuOptions">
+            <li><a href="./contato.html">Cadastre-se</a></li>
+            <li><a href="./sobre.html">Sobre nós</a></li>
+            <li><a href="./cadastro.html">Cadastro</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </div>
+    
+    <header>
+        <section>
+            <!-- Logo link para a página inicial -->
+            <a href="início.html">
+                <div class="colorful-box">
+                    <img src="./imagens/logoempresa.jpg" alt="Logo da empresa XPTO" width="150px"
+                        style="padding: 10px;
+                                border-radius: 50%;
+                                background-position: center;
+                                background-size: 50%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                cursor: pointer;">
+                </div> <!-- Elemento com a animação de cores -->
+            </a>
+        </section>
+
+    </header>
+    <!-- Fim do header -->
+    <!--- Inicio dos cards --->
+    <main >
+    <!-- Início do main -->
+    <main>
+        <!-- Início da section do conteúdo do site -->
+        <section>
+            <!-- Conteúdo de texto sobre o site -->
+            <article>
+                <h1>Desenvolvedor Front-End - (My Code Space)</h1>
+                <h2>Informações sobre a página</h2>
+                <h3 id="Home">.</h3>
+                <h4>Olá, seja bem-vindo à minha humilde página sendo construída em HTML5, CSS e em breve com aplicações de JavaScript. 
+                    Aqui estou fazendo meus devidos treinamentos para cada vez aprender mais sobre essas linguagens. 
+                    Este é um exemplo de texto para praticar as linguagens. Para saber mais sobre mim, clique no botão ''Acesse'' para ler mais.
+                    <br/>
+                    <div style="text-align:justify;">Está página está em construção conforme vai sendo definida pelo desenvolvedor front-end, então por aqui expresso o meu desenvolvimento
+                    da minha página e pratico para me desempenhar cada dia mais.</div>
+                    <hr />
+                    <br>
+                    <p style="height: 10vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    text-align: center;
+                    font-size:large;
+                    font-style: italic;"
+                    >Para mais informações sobre a página acesse abaixo.</p>
+
+                    <img src="./imagens/maunis.JPG"
+                                    style="display: block;
+                                    margin-left: 585px;margin-right:auto;
+                                    border-radius: 20px;
+                                    margin-bottom: 10px;
+                                    margin-top: 10px;">
+                    <a href="./sobre.html" class="myButton">Acesse</a>
+                    <br>
+                </h4>
+                
+                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Nova aba</a><br> <!--Target = abrir link em nova aba-->
+            </article>
+            <!-- Fim do conteúdo de texto sobre o site -->
+            <figcaption>
+            </figcaption>
+
+            </figcaption>
+        </section>
+        <!-- Fim da section do conteúdo do site -->
+    </main>
+    <footer>
+        <!-- Início das redes sociais -->
+        <ul>
+            <!-- Listas não ordenadas = ul / começo das listas depois os li-->
+            <li>
+                <!-- Cada item da lista representado por = li -->
+                <a href="https://www.instagram.com/">
+                    <img src="./imagens/insta.jpg" alt="Instagram" width="25px" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/">
+                    <img src="./imagens/twitter.jpg" alt="Twitter" width="25px" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/">
+                    <img src="./imagens/facebook.jpg" alt="Facebook" width="25px" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.whatsapp.com/">
+                    <img src="./imagens/whatsapp.jpg" alt="Whatsapp" width="25px" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

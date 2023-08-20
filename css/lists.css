@@ -1,0 +1,51 @@
+body {
+    padding: 20px; /* Aumentei o padding para melhor espaçamento */
+    background-color: black;
+    color: rgb(100, 5, 5);
+    font-family: Arial, sans-serif;
+    line-height: normal;
+    text-align: center;
+}
+
+/* Estilizei as tabelas e as linhas (tr) */
+body table,
+body tr {
+    border: none; /* Removi o "!important" pois não é necessário */
+    width: 100%; /* Defini a largura da tabela como 100% */
+    margin: auto;
+    padding: 0%;
+    box-shadow: -5px 9px #b11c1c;
+    transition: 0.5s ease all;
+    cursor: pointer;
+    
+
+}
+
+/* Estilizei as células das tabelas (td) */
+body td {
+    padding: 10px; /* Aumentei o padding das células para melhor espaçamento */
+    color: blueviolet;
+    background-color: aliceblue;
+    
+
+}
+
+/* Estilizei a tabela dentro do footer */
+footer table {
+    margin: 0 auto; /* Centralizei a tabela no footer */
+    width: 90%; /* Defini a largura da tabela como 90% para ocupar menos espaço */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Modifiquei a sombra da tabela */
+    overflow: hidden;
+
+}
+
+/* Estilizei as células da tabela dentro do footer */
+footer td {
+    text-align: center; /* Centralizei o texto nas células */
+}
+
+body h1{
+    color: chartreuse;
+    background-color: lightslategray;
+    border-radius: 50px;
+}

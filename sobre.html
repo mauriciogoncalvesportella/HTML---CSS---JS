@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sobre a página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #353232;
+      margin: 10px;
+      padding: 50px;
+      text-align: center;
+      
+    }
+    
+    h1 {
+      color: #000000;
+      font-weight: normal;
+      line-height: 70px;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 9998;
+      cursor: pointer;
+      transition:.3s ease all;
+      user-select:none;
+      overflow: hidden;
+    }
+    
+    p {
+      color: #666666;
+      margin-bottom: 20px;
+    }
+    
+    .descricao {
+      background-color: #b17c7c;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+    
+    .descricao h2 {
+      color: #333333;
+    }
+    
+    .descricao p {
+      color: #000000;
+    }
+    
+    .botao {
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      
+    }
+    
+    .botao:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo</h1>
+  <p>Breve descrição de mim</p>
+  
+  <button class="botao" onclick="mostrarDescricao()">Ver Descrição</button>
+  
+  <div class="descricao" id="descricao">
+    Aqui descrever sobre minha página !!!!
+    <!-- ... Conteúdo da descrição ... -->
+  </div>
+
+  <script>
+    function mostrarDescricao() {
+      var descricaoDiv = document.getElementById("descricao");
+      var botao = document.querySelector(".botao");
+  
+      if (descricaoDiv.style.display === "none") {
+        descricaoDiv.style.display = "block";
+        botao.textContent = "Ocultar Descrição";
+      } else {
+        descricaoDiv.style.display = "none";
+        botao.textContent = "Ver Descrição";
+      }
+    }
+  </script>
+</body>
+</html>

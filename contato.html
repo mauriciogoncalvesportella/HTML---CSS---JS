@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="icon" type="image/png" href="./imagens/maunis.JPG">
+    <link rel="stylesheet" href="./css/cadastre-se.css">
+</head>
+<body>
+    <!-- Início do header -->
+    <header>
+        <h1>Bem-vindo à página de cadastro.</h1>
+        <section>
+            <!-- Logo como link para a página inicial -->
+            <div class="logo-container">
+                <a href="início.html">
+                    <img src="./imagens/logoempresa.jpg" alt="Logo da empresa XPTO" width="150px">
+                </a>
+            </div>
+        </section>
+    </header>
+<!-- Fim do Header -->
+
+<!-- Início do corpo principal -->
+<main>
+    <!--Início da seção do conteúdo do site-->
+    <section>
+        <!--Conteúdo sobre o formulário de contato-->
+        <article>
+            <h1>Formulário de cadastro</h1>
+            <p>Preencha as informações abaixo:</p>
+
+            <form id="inscrição" action="contato.php" method="post">
+                <fieldset>
+                    <legend>
+                        <h5>Dados do cadastro</h5>
+                    </legend>
+
+                    <label for="txtNome">Nome Completo:</label><br>
+                    <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+
+                    <label for="txtNascimento">Data de nascimento:</label><br>
+                    <input type="date" required="required" id="txtNascimento"><br><br>
+
+                    <label>Sexo:</label><br>
+                    <input type="radio" name="rdoSexo" value="M" required="required">
+                    <label>Masculino</label>
+                    <input type="radio" name="rdoSexo" value="F">
+                    <label>Feminino</label><br><br>
+
+                    <label for="txtLogradouro">Endereço:</label><br>
+                    <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+                    <label for="txtcomplemento">Complemento:</label><br>
+                    <input type="text" required="required" id="txtcomplemento" maxlength="100" size="50"><br><br>
+
+                    <label for="cbxEstado">Estado:</label><br>
+                    <select id="cbxEstado" required="required">
+                        <option value="">-Selecione-</option>
+                        <option value="1">SC</option>
+                        <option value="2">PR</option>
+                        <option value="2">BR</option>
+                    </select><br><br>
+
+                    <label for="cbxCidade">Cidade:</label><br>
+                    <select id="cbxCidade" required="required">
+                        <option value="">-Selecione-</option>
+                        <option value="1">Florianópolis</option>
+                        <option value="1">Joinville</option>
+                        <option value="1">Canoinhas</option>
+                        <option value="1">Blumenau</option>
+                        <option value="2">Guaratuba</option>
+                        <option value="2">Curitiba</option>
+                        <option value="2">Pato Branco</option>
+                        <option value="2">Guaíra</option>
+                    </select><br><br>
+
+                    <label for="Celular">Celular:</label><br>
+                    <input type="number" required="required" id="Celular" size="60" placeholder="(DDD) + Número Celular" maxlength="20"><br><br>
+
+                    <label for="txtEmail">E-mail:</label><br>
+                    <input type="email" required="required" id="txtEmail" size="50"><br><br>
+
+                    <label>Áreas de Interesse:</label><br>
+                    <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                    <label>HTML</label>
+                    <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                    <label>CSS</label>
+                    <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+                    <label>JavaScript</label><br><br>
+
+                    <label for="txtMensagem">Mensagem:</label><br><br>
+                    <textarea id="txtMensagem" cols="50" rows="5" required="required"></textarea><br><br>
+
+                    <input id="btnEnviar" type="submit" value="Enviar" />
+                </fieldset>
+            </form>
+        </article>
+        <!-- Fim do conteúdo de texto sobre o site -->
+    </section>
+    <!-- Fim da seção do conteúdo do site -->
+</main>
+<!-- Fim do main -->
+
+<!--Início do footer-->
+<footer>
+    <!--Início das redes sociais-->
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/"><img src="./imagens/insta.jpg" alt="Instagram" width="25px"/></a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/"><img src="./imagens/twitter.jpg" alt="Twitter" width="25px"/></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/"><img src="./imagens/facebook.jpg" alt="Facebook" width="25px"/></a>
+        </li>
+        <li>
+            <a href="https://www.whatsapp.com/"><img src="./imagens/whatsapp.jpg" alt="Whatsapp" width="25px"/></a>
+        </li>
+    </ul>
+    <!--Fim das redes sociais-->
+</footer>
+<!--Fim do footer-->
+
+</body>
+</html>
